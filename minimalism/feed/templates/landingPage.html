@@ -4,6 +4,12 @@
 <script src="{% static 'js/fullpage.min.js' %}"></script>
 
 {% endblock%} {% block contents %}
+<header>
+  <h1>MINIMALISM</h1>
+  <nav>
+    <span><img class="login-btn" src="{% static 'image/login.png'%}"/></span>
+  </nav>
+</header>
 <div id="main">
   <section class="section"><h2>main</h2></section>
   <section class="section"><h2>introduce</h2></section>
@@ -15,7 +21,8 @@
 <script>
   new fullpage("#main", {
     licenseKey: "",
-    sectionsColor: ["#DEDBD1", "#C3C3B2", "#DEDBD1", "#C3C3B2", "#DEDBD1"]
+    sectionsColor: ["#DEDBD1", "#C3C3B2", "#DEDBD1", "#C3C3B2", "#DEDBD1"],
+    navigation: true
   });
 </script>
 
