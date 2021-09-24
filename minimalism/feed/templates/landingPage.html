@@ -1,0 +1,57 @@
+{% extends 'base.html' %} {% load static %} {% block headers %}
+<link rel="stylesheet" href="{% static 'css/landingPage.css' %}" />
+<link rel="stylesheet" href="{% static 'css/fullpage.min.css' %}" />
+<script src="{% static 'js/fullpage.min.js' %}"></script>
+
+{% endblock%} {% block contents %}
+<header>
+  <h1><img class="logo-image" src="{% static 'image/logo.png' %}" />비우다</h1>
+  <nav>
+    <span><img class="login-btn" src="{% static 'image/login.png'%}"/></span>
+  </nav>
+</header>
+<div id="main">
+  <section class="section">
+    <h2>How to go for minimalism</h2>
+    <h3>
+      비우다
+    </h3>
+    <h4>
+      1.
+      <span class="point-color">
+        [동사]
+      </span>
+      일정한 공간에 사람, 사물 따위를 들어 있지 아니하게 하다.
+    </h4>
+    <h4>
+      2.
+      <span class="point-color">
+        [동사]
+      </span>
+      손에 들거나 몸에 지닌 것을 없게 하다.
+    </h4>
+    <span
+      ><img
+        class="section-image"
+        style="width:400px; height: 300px; float:right; margin:-170px 50px 0 0; z-index:20;"
+        src="{% static 'image/mainImage.png' %}"
+    /></span>
+  </section>
+  <section class="section">
+    <h2>introduce</h2>
+    <h3>미니멀리즘 생활을 시작하고 싶다면</h3>
+  </section>
+  <section class="section"><h2>test page</h2></section>
+  <section class="section"><h2>main page1</h2></section>
+  <section class="section"><h2>main page2</h2></section>
+</div>
+
+<script>
+  new fullpage("#main", {
+    licenseKey: "",
+    sectionsColor: ["#c8bb9e", "#C3C3B2", "#DEDBD1", "#C3C3B2", "#DEDBD1"],
+    navigation: true
+  });
+</script>
+
+{% endblock %}
