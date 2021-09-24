@@ -1,3 +1,9 @@
+h1 {
+  font-weight: 900;
+  float: left;
+  text-align: left;
+}
+
 .section {
   transition-duration: 0.8s;
   position: relative;
@@ -24,12 +30,27 @@
   pointer-events: none;
   user-select: none;
 }
+
 .section h3 {
+  margin-top: 30px;
   text-transform: uppercase;
   width: 70%;
   font-size: 1.5rem;
   font-weight: 600;
-  padding: 0.5em 1em;
+  padding: 0.7em 1em;
+  color: white;
+  mix-blend-mode: screen;
+  border-radius: 0.25em;
+  pointer-events: none;
+  user-select: none;
+}
+
+.section h4 {
+  text-transform: uppercase;
+  width: 70%;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.3em 1.5em;
   color: white;
   mix-blend-mode: screen;
   border-radius: 0.25em;
@@ -57,4 +78,25 @@ header {
   width: 60px;
   height: 60px;
   cursor: pointer;
+  float: left;
+}
+
+.logo-image {
+  width: 40px;
+  height: 40px;
+  margin: -5px 15px 0 0;
+}
+
+.section-image {
+  /* position: absolute;
+  float: right; */
+  width: 100px;
+  height: 100px;
+}
+
+.point-color {
+  color: #f5f4ef;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  user-select: none;
 }
