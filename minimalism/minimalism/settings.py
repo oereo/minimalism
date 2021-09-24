@@ -22,7 +22,8 @@ DEFAULT_APPS = [
 PROJECT_APPS = [
     'accounts',
     'diagnostic_test',
-    'feed'
+    'feed',
+    'tagcloud',
 ]
 
 # for third party
@@ -98,7 +99,6 @@ USE_TZ = True
 # Static
 STATIC_URL = '/static/'
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
-
 
 # Media
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
