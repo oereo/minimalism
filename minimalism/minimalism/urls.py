@@ -9,7 +9,8 @@ urlpatterns = [
     path('', landing_page, name="landingPage"),
     path('accounts/', include('accounts.urls')),
     path('feed/', include('feed.urls')),
-    path('diagnostic-test/', include('diagnostic_test.urls'))
+    path('diagnostic-test/', include('diagnostic_test.urls')),
+    path('tagcloud/', include('tagcloud.urls')),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

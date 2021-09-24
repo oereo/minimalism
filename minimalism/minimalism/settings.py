@@ -22,7 +22,8 @@ DEFAULT_APPS = [
 PROJECT_APPS = [
     'accounts',
     'diagnostic_test',
-    'feed'
+    'feed',
+    'tagcloud',
 ]
 
 # for third party
