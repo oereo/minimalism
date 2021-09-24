@@ -24,6 +24,18 @@
   pointer-events: none;
   user-select: none;
 }
+.section h3 {
+  text-transform: uppercase;
+  width: 70%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  color: white;
+  mix-blend-mode: screen;
+  border-radius: 0.25em;
+  pointer-events: none;
+  user-select: none;
+}
 
 header {
   position: fixed;
