@@ -2,5 +2,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("main/",views.tagcloudmain,name="tagcloudmain"),
+    path("main/",views.pentagraphmain,name="pentagraphmain"),
 ]

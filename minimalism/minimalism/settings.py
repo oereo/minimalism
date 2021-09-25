@@ -24,6 +24,8 @@ PROJECT_APPS = [
     'diagnostic_test',
     'feed',
     'tagcloud',
+    'pentagraph',
+    'main',
 ]
 
 # for third party
@@ -40,7 +42,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = 'minimalism.urls'
@@ -101,6 +103,7 @@ STATIC_DIR = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
 
 # Media
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

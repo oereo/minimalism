@@ -11,6 +11,8 @@ urlpatterns = [
     path('feed/', include('feed.urls')),
     path('diagnostic-test/', include('diagnostic_test.urls')),
     path('tagcloud/', include('tagcloud.urls')),
+    path('pentagraph/', include('pentagraph.urls')),
+    path('main/', include('main.urls')),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
