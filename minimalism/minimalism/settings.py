@@ -17,6 +17,7 @@ DEFAULT_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
 ]
 
 PROJECT_APPS = [
@@ -28,7 +29,6 @@ PROJECT_APPS = [
 
 # for third party
 COMMON_APPS = [
-
 ]
 
 INSTALLED_APPS = DEFAULT_APPS + PROJECT_APPS + COMMON_APPS
