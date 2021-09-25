@@ -10,4 +10,5 @@ urlpatterns = [
     path('result_page3/', views.result_page3, name="result_page3"),
     path('result_page4/', views.result_page4, name="result_page4"),
     path('result_page5/', views.result_page5, name="result_page5"),
+
 ]
