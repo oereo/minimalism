@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/index.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <iframe frameborder="0" name="iframemain"
+        src="{% url 'tagcloudmain' %}"
+        scrolling="no" border="no" maginwidth="0" marginheight="0" frameborder="0" id="main_iframe" width="80%" height="100%">
+    </iframe>
+    <iframe frameborder="0"
+        src="{% url 'indexnav' %}" name="iframenav"
+        scrolling="no" border="no" maginwidth="0" marginheight="0" frameborder="0" id="main_iframe" width="20%" height="100%">
+    </iframe>
+</body>
+</html>
