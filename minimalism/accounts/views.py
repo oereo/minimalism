@@ -36,11 +36,12 @@ def create_user(request):
         if user is not None:
             auth.login(request, user)
             print(user)
-            return redirect('landingPage')
+            return redirect('tagcloudmain')
         else:
             return render(request, 'login.html')
     else:
         return render(request, 'login.html')
+
 
 def logout(request):
     auth.logout(request)
