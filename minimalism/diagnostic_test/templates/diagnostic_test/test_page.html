@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="{% static 'diagnostic_test/test_page.css' %}"/>
+    <script src="./jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="{% static 'test_page.js' %}"></script>
 </head>
 <body>
     <section class="test_page">
-        <form action="#" method="POST">
+
+        <form action="{% url 'result_test' %}" method="POST">
         {% csrf_token %}
 
             <!--page1--------->
@@ -39,7 +42,7 @@
                         <label for="c2">5. 물건을 잘 잃어버리지 않는다</label>
                     </li>
                 </ul>
-                <a href="#"><h1 class="fromLeft">Next</h1></a>
+                <a href="#"><h1 class="fromLeft" id="fromLeftid_1">Next</h1></a>
             </div>
 
             <!-------page2--------->
@@ -69,7 +72,7 @@
                             <label for="c10">10. 손수건과 텀블러를 항상 들고 다닌다</label>
                         </li>
                     </ul> 
-                    <a href="#"><h1 class="fromLeft">Next</h1></a>
+                    <a href="#"><h1 class="fromLeft" id="fromLeftid_2">Next</h1></a>
                 
             </div>
 
@@ -101,7 +104,7 @@
                             <label for="c15">15. 선물로는 물건보다 티켓이나 간단한 식사가 좋다</label>
                         </li>
                     </ul>
-                    <a href="#"><h1 class="fromLeft">Next</h1></a>
+                    <a href="#"><h1 class="fromLeft" id="fromLeftid_3">Next</h1></a>
             </div>
 
             <!--page4--------->
@@ -132,7 +135,15 @@
                             <label for="c20">20. 공짜에 유혹당하지 않는다</label>
                         </li>
                     </ul>
-                    <input type="submit" value="submit">   
+                    <input type="hidden" value="0" id="numberOfchecked" name="nameOfchecked">
+                    <div id="submit_button">
+                        <label for="fromLeftsubmit">
+                            <div id="submit_button_img">
+                                <img src="/static/diagnostic_test/Btn_submit.png"/>
+                            </div>
+                        </label>
+                        <input type="submit" value="submit" id="fromLeftsubmit">
+                    </div>
             </div>
         </form>   
     </section>
