@@ -45,6 +45,7 @@
     <button
       type="button"
       class="btn btn-primary"
+      style="background-color:#cec3b2; border-color:#cec3b2; margin-top: 15px;"
       data-bs-toggle="modal"
       data-bs-target="#exampleModal"
     >
@@ -82,7 +83,7 @@
           <form action="{% url 'create_plan' %}" method="POST">
             {% csrf_token %}
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <h5 class="modal-title" id="exampleModalLabel">등록</h5>
               <button
                 type="button"
                 class="btn-close"
@@ -144,7 +145,7 @@
           datasets: [
             {
               //데이터
-              label: "비우기 리스트 갯수", //차트 제목
+              label: "비워야할 리스트 갯수", //차트 제목
               fill: false, // line 형태일 때, 선 안쪽을 채우는지 안채우는지
               data: [
                 {{plan1_length}},
