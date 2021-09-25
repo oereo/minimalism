@@ -64,6 +64,7 @@
               >{{ plan.content }} <i class="fas fa-arrow-right"></i
             ></a>
           </p>
+          <a class="card__link" href="{% url 'delete_plan' plan.pk %}">삭제하기</button>
         </div>
         {% endfor %}
       </div>
@@ -134,23 +135,23 @@
           // 차트에 들어갈 데이터
           labels: [
             //x 축
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"
+            "생필품",
+            "문구류",
+            "주방용품",
+            "전자기기",
+            "의류"
           ],
           datasets: [
             {
               //데이터
-              label: "test1", //차트 제목
+              label: "비우기 리스트 갯수", //차트 제목
               fill: false, // line 형태일 때, 선 안쪽을 채우는지 안채우는지
               data: [
-                5,
-                4,
-                3,
-                2,
-                1 //x축 label에 대응되는 데이터 값
+                {{plan1_length}},
+                {{plan2_length}},
+                {{plan3_length}},
+                {{plan4_length}},
+                {{plan5_length}} //x축 label에 대응되는 데이터 값
               ],
               backgroundColor: [
                 //색상

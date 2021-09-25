@@ -80,12 +80,15 @@ body {
   content: "";
   width: 0%;
   height: 3px;
+  color: gray;
+
   background-color: rgba(255, 255, 255, 0.6);
   transition: all 0.5s;
 }
 
 .card__link:hover::after {
   width: 100%;
+  color: gray;
 }
 
 .card__exit {
