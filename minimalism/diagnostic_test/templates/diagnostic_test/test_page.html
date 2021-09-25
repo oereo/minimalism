@@ -1,0 +1,145 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'diagnostic_test/test_page.css' %}"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="test_page">
+        <form action="" method="POST">
+        {% csrf_token %}
+
+            <!--page1--------->
+            <div id="page1">
+                <div class="progress">
+                    <progress value="25" max="100"></progress>
+                </div>
+                <ul>
+                    <li>
+                      <input id="c1" type="checkbox">
+                      <label for="c1">1. 쇼핑할 때 에코백을 꼭 챙긴다</label>
+                    </li>
+                    <li>
+                      <input id="c2" type="checkbox">
+                      <label for="c2">2. 구매할 물건은 항상 '리스트'를 작성한다. 정해진 물건 외에 사지 않는다</label>
+                    </li>
+                    <li>
+                        <input id="c3" type="checkbox">
+                        <label for="c1">3. 여분을 쟁여놓지 않는다</label>
+                    </li>
+                    <li>
+                        <input id="c4" type="checkbox">
+                        <label for="c2">4. 식재료는 하루 분만 구매한다</label>
+                    </li>
+                    <li>
+                        <input id="c5" type="checkbox">
+                        <label for="c2">5. 물건을 잘 잃어버리지 않는다</label>
+                    </li>
+                </ul>
+                <a href="#"><h1 class="fromLeft">Next</h1></a>
+            </div>
+
+            <!-------page2--------->
+            <div id="page2">
+                <div class="progress">
+                    <progress value="50" max="100"></progress>
+                </div>
+                    <ul>
+                        <li>
+                        <input id="c6" type="checkbox">
+                        <label for="c6">6. 물건을 금방 찾는다</label>
+                        </li>
+                        <li>
+                        <input id="c7" type="checkbox">
+                        <label for="c7">7. 수입의 30% 이상을 저축한다</label>
+                        </li>
+                        <li>
+                            <input id="c8" type="checkbox">
+                            <label for="c8">8. 좋아하는 브랜드 or 샵이 있다</label>
+                        </li>
+                        <li>
+                            <input id="c9" type="checkbox">
+                            <label for="c9">9. 물건은 더는 사용할 수 없어질 때까지 사용한다</label>
+                        </li>
+                        <li>
+                            <input id="c10" type="checkbox">
+                            <label for="c10">10. 손수건과 텀블러를 항상 들고 다닌다</label>
+                        </li>
+                    </ul> 
+                    <a href="#"><h1 class="fromLeft">Next</h1></a>
+                
+            </div>
+
+            <!-------page3-------->
+            <div id="page3">
+                <div style="margin-left:70px;">
+                    <progress value="75" max="100"></progress>
+                </div>
+
+                    <ul>
+                        <li>
+                        <input id="c11" type="checkbox">
+                        <label for="c11">11. 주 3회 이상 청소한다</label>
+                        </li>
+                        <li>
+                        <input id="c12" type="checkbox">
+                        <label for="c12">12. 휴대폰, 컴퓨터는 정말 필요한 순간에만 사용한다</label>
+                        </li>
+                        <li>
+                            <input id="c13" type="checkbox">
+                            <label for="c13">13. 전화통화는 10분 이상 하지 않는다</label>
+                        </li>
+                        <li>
+                            <input id="c14" type="checkbox">
+                            <label for="c14">14. SNS 계정은 1개 이하이다</label>
+                        </li>
+                        <li>
+                            <input id="c15" type="checkbox">
+                            <label for="c15">15. 선물로는 물건보다 티켓이나 간단한 식사가 좋다</label>
+                        </li>
+                    </ul>
+                    <a href="#"><h1 class="fromLeft">Next</h1></a>
+            </div>
+
+            <!--page4--------->
+            <div id="page4">
+                <div style="margin-left:70px;">
+                    <progress value="100" max="100"></progress>
+                </div>
+    
+                    <ul>
+                        <li>
+                        <input id="c16" type="checkbox">
+                        <label for="c16">16. 매일 꾸준히 운동한다</label>
+                        </li>
+                        <li>
+                        <input id="c17" type="checkbox">
+                        <label for="c17">17. 난방비, 관리세, 수도세, 전기세를 거의 내지 않는다</label>
+                        </li>
+                        <li>
+                            <input id="c18" type="checkbox">
+                            <label for="c18">18. 집에 고장 나거나 하자 있는 물건이 거의 없다 ex) 짝 없는 양말</label>
+                        </li>
+                        <li>
+                            <input id="c19" type="checkbox">
+                            <label for="c19">19. 1+1, 50% 할인 등의 문구에 영향을 받지 않는다</label>
+                        </li>
+                        <li>
+                            <input id="c20" type="checkbox">
+                            <label for="c20">20. 공짜에 유혹당하지 않는다</label>
+                        </li>
+                    </ul>
+                    <input type="submit" value="submit">   
+            </div>
+        </form>   
+    </section>
+    
+    
+</body>
+</html>
+   
+
+

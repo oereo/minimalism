@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+body{
+    margin:150px;
+    background: #DEDBD1;
+}
+
+.result_page {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    background:#F5F4EF;
+    padding:30px;
+    width:700px; height:300px;
+    border-radius:20px;
+    border : 3px solid #53524E;
+    margin:120px;
+  
+}
+
+
+h4{
+    color:#53524E;
+    display:inline-block; 
+    text-transform:uppercase;
+    text-align:center;
+    font-size:20px;
+}
+
+h4:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #53524E;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+h4:hover:after { transform: scaleX(1); }
+h4.fromLeft:after{  transform-origin:  0% 50%; }
+
+
+
