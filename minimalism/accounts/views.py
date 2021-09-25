@@ -22,7 +22,7 @@ def signup_user(request):
                 email=request.POST["email"]
             )
             auth.login(request, user)
-            return redirect('landingPage')
+            return render(request, 'login.html')
         return render(request, 'signup.html')
     return render(request, 'signup.html')
 
@@ -36,7 +36,7 @@ def create_user(request):
         if user is not None:
             auth.login(request, user)
             print(user)
-            return redirect('tagcloudmain')
+            return redirect('indexmain')
         else:
             return render(request, 'login.html')
     else:
