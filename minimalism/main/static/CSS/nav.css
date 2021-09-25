@@ -1,0 +1,39 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+body {
+    background-color: rgba(204, 156, 83, 1);
+}
+
+div.nav_specific {
+    transition: all .15s ease-out;
+    background-color: rgba(204, 156, 83, 0);
+    width: 100%;
+    height: 10%;
+    padding-top: 15%;
+    cursor: pointer;
+    font-size: 7vw;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* a:hover {
+    font-weight: bold;
+} */
+
+div.nav_specific:hover {
+    background-color: rgba(182, 139, 75, 0.7);
+}
