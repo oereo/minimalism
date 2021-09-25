@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'CSS/tagcloud.css' %}">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'CSS/tagcloud.css' %}"
+    />
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/card.css' %}" />
     <script src="./jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="{% static 'JS/tagcloud.js' %}"></script>
-</head>
-<body>
+  </head>
+  <body>
     <ul class="cloud" role="navigation" aria-label="Webdev word cloud">
-        <!-- 최대값 : 2년 -> data-weight="20" -->
-        <li><a href="#" date="20200819" id="0">맨투맨</a></li>
+      <!-- 최대값 : 2년 -> data-weight="20" -->
+      <!-- <li><a href="#" date="20200819" id="0">맨투맨</a></li>
         <li><a href="#" date="20191120" id="1">흰 후드티</a></li>
         <li><a href="#" date="20210719" id="2">머그컵</a></li>
         <li><a href="#" date="20191228" id="3">미니선풍기</a></li>
@@ -28,13 +37,39 @@
         <li><a href="#" date="20210519" id="11">물 새는 물병</a></li>
         <li><a href="#" date="20200818" id="12">지구본</a></li>
         <li><a href="#" date="20210109" id="13">깨진 액자</a></li>
-        <li><a href="#" date="20200210" id="14">고1 수학책</a></li>
-      </ul>
+        <li><a href="#" date="20200210" id="14">고1 수학책</a></li> -->
 
-      <div class="inf">
-        <p id="inf_title">제목</p>
-        <p id="inf_date">날짜</p>
-        <p id="inf_specific">상세</p>
+      {% for plan in plans %}
+      <li>
+        <a href="#" date="{{ plan.clean_date }}" id="{{ forloop.counter }}">
+          {{ plan.title }}</a
+        >
+      </li>
+      {% endfor %}
+    </ul>
+    <br />
+
+    <div class="inf">
+      <p id="inf_title">제목</p>
+      <p id="inf_date">날짜</p>
+      <p id="inf_specific">상세</p>
+    </div>
+
+    <div class="pricing-card">
+      <div class="card-left">
+        <h1>Gold</h1>
+        <p><span class="dollar">$</span>17</p>
       </div>
-</body>
+      <div class="card-right">
+        <h1>Features:</h1>
+        <ul class="card-list">
+          <li>&mdash; Looks great</li>
+          <li>&mdash; HTML / CSS only</li>
+          <li>&mdash; Feature 3</li>
+          <li>&mdash; Feature 4</li>
+        </ul>
+        <a href="#" class="button">Add To Cart</a>
+      </div>
+    </div>
+  </body>
 </html>
