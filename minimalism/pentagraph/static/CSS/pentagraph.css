@@ -1,7 +1,7 @@
 html, body {
     width: 100%;
     height: 100%;
-    margin: 0;
+    margin: 100px;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -10,3 +10,4 @@ html, body {
     flex-wrap: nowrap;
     text-align: center;
 }
+
