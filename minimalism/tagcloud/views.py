@@ -8,5 +8,6 @@ from tagcloud.models import Plan
 def tagcloudmain(request):
     user = request.user
     plans = Plan.objects.filter(user=user)
+    plans_length = len(plans)
 
-    return render(request, "tagcloud.html", {'plans': plans})
+    return render(request, "tagcloud.html", {'plans': plans, 'plans_length': plans_length})
