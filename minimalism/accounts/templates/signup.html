@@ -1,0 +1,37 @@
+{% extends 'base.html' %} {% load static %} {% block headers %} {% endblock %}
+{% block contents %}
+
+<div class="center">
+  <div class="container">
+    <div class="text">
+      회원가입
+    </div>
+    <form action="{% url 'signup_user' %}" method="POST">
+      {% csrf_token %}
+      <div class="data">
+        <label>Nickname</label>
+        <input type="text" name="username" required />
+      </div>
+
+      <div class="data">
+        <label>Email</label>
+        <input type="text" name="email" required />
+      </div>
+      <div class="data">
+        <label>Password</label>
+        <input type="password" name="password1" required />
+      </div>
+      <div class="data">
+        <label>Password</label>
+        <input type="password" name="password2" required />
+      </div>
+
+      <div class="btn">
+        <div class="inner"></div>
+        <button type="submit">Signup</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

@@ -3,11 +3,15 @@
 <link rel="stylesheet" href="{% static 'css/fullpage.min.css' %}" />
 <script src="{% static 'js/fullpage.min.js' %}"></script>
 
-{% endblock%} {% block contents %}
+{% endblock %} {% block contents %}
 <header>
   <h1><img class="logo-image" src="{% static 'image/logo.png' %}" />비우다</h1>
   <nav>
-    <span><img class="login-btn" src="{% static 'image/login.png'%}"/></span>
+    <span>
+      <a href="{% url 'login' %}"
+        ><img class="login-btn" src="{% static 'image/login.png'%}"
+      /></a>
+    </span>
   </nav>
 </header>
 <div id="main">
@@ -53,5 +57,4 @@
     navigation: true
   });
 </script>
-
 {% endblock %}
