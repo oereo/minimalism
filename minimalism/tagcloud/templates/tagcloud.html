@@ -39,20 +39,22 @@
         <li><a href="#" date="20210109" id="13">깨진 액자</a></li>
         <li><a href="#" date="20200210" id="14">고1 수학책</a></li> -->
 
-      {% for plan in plans %}
+      {% if plans_length == False %}
+      <img src="{% static 'image/register_recommand.png' %}" />
+      <br />
+      STATISTICS 페이지에서 비울 일정을 등록해주세요!
+      <br />{% else %} {% for plan in plans %}
       <li>
         <a href="#" date="{{ plan.clean_date }}" id="{{ forloop.counter }}">
           {{ plan.title }}</a
         >
       </li>
-      {% endfor %}
+      <!-- <div class="inf" style="overflow: hidden">
+          <p id="inf_date-{{ forloop.counter }}">날짜 : {{ plan.clean_date }}</p>
+          <p id="inf_specific-{{ forloop.counter }}">상세 : {{ plan.content }}</p>
+        </div> -->
+      {% endfor %} {% endif %}
     </ul>
     <br />
-
-    <div class="inf">
-      <p id="inf_title">제목</p>
-      <p id="inf_date">날짜</p>
-      <p id="inf_specific">상세</p>
-    </div>
   </body>
 </html>
