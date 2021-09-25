@@ -1,0 +1,102 @@
+h1 {
+  font-weight: 900;
+  float: left;
+  text-align: left;
+}
+
+.section {
+  transition-duration: 0.8s;
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  background-size: cover;
+  scroll-snap-align: center;
+}
+.section h2 {
+  text-transform: uppercase;
+  width: 80%;
+  font-size: 2.25rem;
+  font-weight: 900;
+  padding: 0.5em 1em;
+  color: #1d1e22;
+  background-color: #f4f4f4;
+  mix-blend-mode: screen;
+  border-radius: 0.25em;
+  pointer-events: none;
+  user-select: none;
+}
+
+.section h3 {
+  margin-top: 30px;
+  text-transform: uppercase;
+  width: 70%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.7em 1em;
+  color: white;
+  mix-blend-mode: screen;
+  border-radius: 0.25em;
+  pointer-events: none;
+  user-select: none;
+}
+
+.section h4 {
+  text-transform: uppercase;
+  width: 70%;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.3em 1.5em;
+  color: white;
+  mix-blend-mode: screen;
+  border-radius: 0.25em;
+  pointer-events: none;
+  user-select: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 75px;
+  padding: 1rem;
+  color: white;
+  background: transparent;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-btn {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  float: left;
+}
+
+.logo-image {
+  width: 40px;
+  height: 40px;
+  margin: -5px 15px 0 0;
+}
+
+.section-image {
+  /* position: absolute;
+  float: right; */
+  width: 100px;
+  height: 100px;
+}
+
+.point-color {
+  color: #f5f4ef;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  user-select: none;
+}

@@ -17,17 +17,20 @@ DEFAULT_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
 ]
 
 PROJECT_APPS = [
     'accounts',
     'diagnostic_test',
-    'feed'
+    'feed',
+    'tagcloud',
+    'pentagraph',
+    'main',
 ]
 
 # for third party
 COMMON_APPS = [
-
 ]
 
 INSTALLED_APPS = DEFAULT_APPS + PROJECT_APPS + COMMON_APPS
@@ -40,7 +43,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = 'minimalism.urls'
@@ -97,6 +100,7 @@ USE_TZ = True
 
 # Static
 STATIC_URL = '/static/'
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
