@@ -45,6 +45,12 @@ h1:after {
 h1:hover:after { transform: scaleX(1); }
 h1.fromLeft:after{  transform-origin:  0% 50%; }
 
+h1#page1:active{
+    display:none;
+
+}
+
+
 .test_page .progress{
     text-align:center;
     color:#53524E;
@@ -74,19 +80,7 @@ progress {
     display:none;
 }
 
-#nextTo2:checked #page2{
-    display:block;
-}
-#nextTo2:checked #page1{
-    display:none;
-}
 
-#nextTo2:checked #page3{
-    display:none;
-}
-#nextTo2:checked #page4{
-    display:none;
-}
 
 
 

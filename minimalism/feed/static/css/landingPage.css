@@ -1,10 +1,27 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Sunflower:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Sunflower:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+
+* {
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
 h1 {
   font-weight: 900;
   float: left;
   text-align: left;
+  font-family: 'Sunflower', sans-serif;
+  padding:30px;
+  
+  color:#53524E;
 }
 
+
 .section {
+  margin:30px;
   transition-duration: 0.8s;
   position: relative;
   display: flex;
@@ -16,48 +33,101 @@ h1 {
   font-size: 1rem;
   background-size: cover;
   scroll-snap-align: center;
+  padding:20px;
 }
 .section h2 {
   text-transform: uppercase;
-  width: 80%;
+  width: 800px;
   font-size: 2.25rem;
   font-weight: 900;
   padding: 0.5em 1em;
-  color: #1d1e22;
-  background-color: #f4f4f4;
-  mix-blend-mode: screen;
+  color: #F5F4EF;
+  background-color:#53524E;
+  /*mix-blend-mode: screen;*/
   border-radius: 0.25em;
   pointer-events: none;
   user-select: none;
 }
 
 .section h3 {
-  margin-top: 30px;
+  margin-top: 10px;
   text-transform: uppercase;
-  width: 70%;
+  width: 50%;
   font-size: 1.5rem;
   font-weight: 600;
   padding: 0.7em 1em;
-  color: white;
-  mix-blend-mode: screen;
+  color: #53524E;
+  /*mix-blend-mode: screen;*/
   border-radius: 0.25em;
   pointer-events: none;
   user-select: none;
+  font-family: 'Sunflower', sans-serif;
 }
+
+.section div p{
+  margin-left:30px;
+}
+
+
+.section #start_test{
+  font-size:30px;
+  color:#53524E;
+  text-decoration:none;
+  display:inline-block; 
+  text-transform:uppercase;
+  text-align:right;
+  margin-top:30px;
+  margin-left:30px;
+  
+}
+
+.section #start_test:after{
+  display:block;
+  content: '';
+  border-bottom: solid 3px #53524E;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.section #start_test:hover:after { transform: scaleX(1); }
+.section #start_test:after{  transform-origin:  0% 50%; }
+
+
 
 .section h4 {
   text-transform: uppercase;
-  width: 70%;
+  width: 50%;
   font-size: 1rem;
   font-weight: 600;
   padding: 0.3em 1.5em;
-  color: white;
-  mix-blend-mode: screen;
+  color:#53524E;
+  /*mix-blend-mode: screen;*/
   border-radius: 0.25em;
   pointer-events: none;
   user-select: none;
+  margin-right:-100px;
+} 
+
+.section h4 span{
+  color:#53524E;
+  
+}
+.section h4#inspiration{
+  text-align:center;
+  margin-left:200px;
+  font-family: 'Nanum Myeongjo', serif;
 }
 
+.section span .section-image{
+  border-radius:40px;
+   
+ 
+}
+
+.section .gif{
+  border-radius:20px;
+  margin:20px;
+}
 header {
   position: fixed;
   top: 0;
@@ -96,7 +166,7 @@ header {
 
 .point-color {
   color: #f5f4ef;
-  mix-blend-mode: screen;
+  /*mix-blend-mode: screen;*/
   pointer-events: none;
   user-select: none;
 }

@@ -24,3 +24,4 @@ def result_page4(request):
 
 def result_page5(request):
     return render(request, "diagnostic_test/result_page5.html") 
+
