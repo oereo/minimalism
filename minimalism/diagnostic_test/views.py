@@ -8,6 +8,21 @@ from django.template import loader
 def test_page(request):
     return render(request,"diagnostic_test/test_page.html")
 
+def result_test(request):
+    if request.method=="POST":
+        check = int(request.POST['nameOfchecked'])
+        if(check>=18):
+            return render(request,"diagnostic_test/result_page1.html")
+        elif(check>=13):
+            return render(request,"diagnostic_test/result_page2.html")
+        elif(check>=7):
+            return render(request,"diagnostic_test/result_page3.html")
+        elif(check>=3):
+            return render(request,"diagnostic_test/result_page4.html")
+        else:
+            return render(request,"diagnostic_test/result_page5.html")
+
+
 
 # result_page
 def result_page1(request):
