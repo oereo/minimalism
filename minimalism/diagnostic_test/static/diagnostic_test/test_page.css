@@ -50,22 +50,9 @@ h1.fromLeft:after {
   transform-origin: 0% 50%;
 }
 
-<<<<<<< HEAD
 .test_page .progress {
   text-align: center;
   color: #53524e;
-=======
-h1#page1:active{
-    display:none;
-
-}
-
-
-.test_page .progress{
-    text-align:center;
-    color:#53524E;
-    
->>>>>>> 973e69b089b1997be0c129472f3ee60406a50dfd
 }
 
 progress {
@@ -91,7 +78,6 @@ progress {
   display: none;
 }
 
-<<<<<<< HEAD
 #nextTo2:checked #page2 {
   display: block;
 }
@@ -105,9 +91,6 @@ progress {
 #nextTo2:checked #page4 {
   display: none;
 }
-=======
-
->>>>>>> 973e69b089b1997be0c129472f3ee60406a50dfd
 
 #submit_button {
   display: flex;

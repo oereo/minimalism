@@ -19,15 +19,10 @@
   </head>
   <body style="overflow-y:scroll">
     <section class="test_page">
-<<<<<<< HEAD
       <form action="{% url 'result_test' %}" method="POST">
-=======
-
-        <form action="{% url 'result_test' %}" method="POST">
->>>>>>> 973e69b089b1997be0c129472f3ee60406a50dfd
         {% csrf_token %}
 
-        <!--page1--------->
+        {% comment %} <!--page1---------> {% endcomment %}
         <div id="page1">
           <div class="progress">
             <progress value="25" max="100"></progress>
@@ -60,7 +55,7 @@
           <a href="#"><h1 class="fromLeft" id="fromLeftid_1">Next</h1></a>
         </div>
 
-        <!-------page2--------->
+        {% comment %} <!-------page2---------> {% endcomment %}
         <div id="page2">
           <div class="progress">
             <progress value="50" max="100"></progress>
@@ -92,7 +87,7 @@
           <a href="#"><h1 class="fromLeft" id="fromLeftid_2">Next</h1></a>
         </div>
 
-        <!-------page3-------->
+        {% comment %} <!-------page3--------> {% endcomment %}
         <div id="page3">
           <div style="margin-left:70px;">
             <progress value="75" max="100"></progress>
@@ -127,7 +122,7 @@
           <a href="#"><h1 class="fromLeft" id="fromLeftid_3">Next</h1></a>
         </div>
 
-        <!--page4--------->
+        {% comment %} <!--page4---------> {% endcomment %}
         <div id="page4">
           <div style="margin-left:70px;">
             <progress value="100" max="100"></progress>
